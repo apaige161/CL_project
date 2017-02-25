@@ -53,15 +53,11 @@ body, html {
   padding-left: auto;
 }
 
-#nav li, #nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 5%;
-}
-
-#nav ul {
-  justify-content: space-between;
+#nav h2 {
+  justify-content: center;
   align-items: center;
+  text-shadow: 1px 1px 2px black;
+  font-size: 2.5em;
 }
 
 h1 {
