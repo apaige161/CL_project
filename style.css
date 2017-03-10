@@ -36,7 +36,6 @@ body, html {
   background-color: rgb(0, 102, 153);
   color: white;
   border: solid black 2px;
-  padding: 4%;
 }
 
 #nav > * {
@@ -83,10 +82,26 @@ h1 {
   color: black;
 }
 
+.videoAndMap {
+  justify content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
 .isaVideo {
-  flex: 3;
+  flex: 1;
+  justify content: space-between;
+  align-items: center;
   width:"640";
   height:"360";
+}
+
+.map {
+  flex: 1;
+  justify content: space-between;
+  align-items: center;
+  width: "400";
+  height: "300";
 }
 
 .contact {
@@ -102,11 +117,23 @@ footer {
 
 /****************MEDIA QUERIES*************************/
 
+@media(max-width: 910px) {
+  #nav h2 {
+    font-size:1.5em;
+    align-items: center;
+    text-align: center;
+  }
+
+  .videoAndMap {
+    flex:none;
+  }
+}
+
 @media(max-width: 760px) {
   #nav h1 {
     font-size: 1.5em;
     align-items: center;
-    justify-content:center;
+    justify-content: space-between;
   }
 
   #nav ul {
@@ -120,6 +147,11 @@ footer {
     align-items: center;
     justify-content: space-between;
   }
+
+  .isaVideo,
+  .map {
+    flex-direction: column;
+  }
 }
 
 @media(max-width: 500px){
@@ -129,11 +161,5 @@ footer {
 
   #nav h1 {
     text-align: center;
-  }
-
-  .isaVideo,
-  .contact {
-    flex-direction: column;
-    flex-wrap: wrap-reverse;
   }
 }
