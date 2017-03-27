@@ -1,7 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
+<link rel="stylesheet" href="normalize.css" type="text/css" media="screen" title="no title" charset="utf-8">
 <link rel="stylesheet" href="style.css" type="text/css" media="screen" title="no title" charset="utf-8">
+<link rel="stylesheet" href="./FlexSlider-master/flexslider.css" type="text/css" />
+
+<script src="./FlexSlider-master/bower_components/jquery/dist/jquery.min.js"></script>
+<script src="./FlexSlider-master/jquery.flexslider-min.js"></script>
+<!-- Place either at the bottom in the <head> of your page or inside your CSS -->
+<style type="text/css">
+/*.flex-caption {
+  width: 96%;
+  padding: 2%;
+  left: 0;
+  bottom: 0;
+  background: rgba(0,0,0,.5);
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0,0,0,.3);
+  font-size: 14px;
+  line-height: 18px;
+}*/
+</style>
 </head>
 <title>Prunty Tree and Crane</title>
 <body>
@@ -15,62 +34,52 @@
 			</div>
 
 		<div class="content-wrapper">
-		<div class="content dflex">
-			<div>
-				<section>
-					<h2>Mission Statement</h2>
-					<p>
-					What is Lorem Ipsum?
-					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-					</p>
-				</section>
-			</div>
 
-			<div>
+			<div class="flexslider">
+			  <ul class="slides">
+			    <li>
+			      <img src="http://static.wixstatic.com/media/aa7f85_2c9fc459880e44baa6b770361d322410.jpeg" alt="crane picking up a limb" />
+			      <p class="flex-caption">Crane removal</p>
+			    </li>
+			    <li>
+			      <img src="http://www.extremesportstrader.co.uk/shots/wp-content/uploads/2010/09/tree_climber_jump.jpg" />
+			      <p class="flex-caption">manual removals and pruning</p>
+			    </li>
+					<li>
+			      <img src="http://www.forestcitytree.com/images/ISA-Member-Arborist-2.png" />
+						<p class="flex-caption">ISA certified</p>
+			    </li>
+			  </ul>
+			</div>
+		<div class="content dflex">
+
+			<div class="about row left">
 				<section>
 					<h2>About</h2>
 					<p>
-					What is Lorem Ipsum?
-					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+						Randy prunty has been a certified arborist in the louisville area with over 20 years of experience. He has actively contributed to the arborist's community by volunterring in various events and training new and experienced tree workers alike. Randy exceeds all safety and best practices by tree industry standards while using cutting edge technology to stay ahead of the curb. If you are looking for a real pro look no further and call the number at the top of the page.
 					</p>
 				</section>
-
-				<div class="videoAndMap dflex">
-					<div class="isaVideo row">
-						<iframe src="https://www.youtube.com/embed/V1g9iGM2u44?ecver=2" frameborder="0" allowfullscreen>
-						</iframe>
-					</div>
-				<div class="map row">
-					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d401398.0920345239!2d-85.95695635287643!3d38.18847209627987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88690b1ab35bd511%3A0xd4d3b4282071fd32!2sLouisville%2C+KY!5e0!3m2!1sen!2sus!4v1489099671718"
-					frameborder="0" allowfullscreen>
-					</iframe>
-				</div>
 			</div>
 
-			<div>
+			<div class="services row middle">
 				<section>
 					<h2>Services</h2>
 					<p>
-					What is Lorem Ipsum?
-					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+						The services Prunty Tree and Crane LLC include: pruning, cabling, removal, and even general crane work. Pruning should be done regularly to reduce the chance of limb or tree failure. If done early and often it can improve the overall health and structure of the tree. Cabling should be done if a limb has an above average risk for failure, this should be up to the arborist. When pruning and/or cabling efforts have been exhausted then removal may be the only option. We can do that too!
 					</p>
 				</section>
 			</div>
 
-				<div class="contact row">
-					<h3>Randy  Prunty: <a href tel:5026644242>(502)664-4242</a></h3>
-				</div>
+
+			<div class="isaVideo row right">
+				<iframe src="https://www.youtube.com/embed/V1g9iGM2u44?ecver=2" frameborder="0" allowfullscreen >
+				</iframe>
 			</div>
+		</div>
 
-
+		</div>
 	</div>
-
-	<footer>
-		<p>
-			copyright something something
-		</p>
-	</footer>
-</div>
-	<script src="http://code.jquery.com/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript" charset="utf-8" src="./app.js"></script>
 </body>
 </html>
