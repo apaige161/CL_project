@@ -23,9 +23,10 @@ body, html {
   display: flex;
 }
 
-.left {order:1; flex-basis:100%;}
-.middle {order:3; flex-basis:100%;}
-.right {order:2; flex-basis:100%;}
+.first {order:1; flex-basis:100%;}
+.second {order:2; flex-basis:100%;}
+.third {order:3; flex-basis:100%;}
+.fourth {order:4; flex-basis:100%;}
 
 /* Navigation styles */
 #nav {
@@ -91,7 +92,7 @@ h3 a {
   flex: 1;
   padding: 1em;
   background: rgba(255, 255, 255, .9);
-  flex-direction: row;
+  flex-direction: wrap;
   justify content: space-between;
   align-items: stretch;
   border-radius: 10px;
@@ -112,12 +113,18 @@ h3 a {
   width: 300px;
 }
 
+/* split content to next line??????????? */
+.content div:nth-child(2n) {
+  flex-break: after;
+}
+
 
 
 /* slider styles */
 .flexslider {
   width: 40%;
   text-align: center;
+  align-items: center;
 }
 
 .flex-caption {
