@@ -188,11 +188,15 @@ h3 a {
 
 @media(max-width: 650px) {
   /* make the two column layout a single column */
+
   .content {
     flex-direction: column;
   }
   .services {
     padding-left: 0;
+  }
+  .flexslider {
+    margin: 0 auto;
   }
 }
 
